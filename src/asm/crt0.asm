@@ -18,3 +18,5 @@ _start:
     call exit
     
     hlt
+
+section .note.GNU-stack noalloc noexec nowrite progbits

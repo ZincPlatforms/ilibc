@@ -54,3 +54,5 @@ syscall5:
     mov rdi, r9
     int 0x80
     ret
+
+section .note.GNU-stack noalloc noexec nowrite progbits

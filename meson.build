@@ -1,5 +1,10 @@
 cc = meson.get_compiler('c')
-userland_c_flags = ['-nostdlib', '-ffreestanding']
+userland_c_flags = [
+  '-nostdlib',
+  '-ffreestanding',
+  '-fno-stack-protector',
+  '-fno-builtin',
+]
 
 ilibc_sources = files(
   'src/c/stdio.c',
