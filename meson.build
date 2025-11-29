@@ -1,5 +1,3 @@
-project('ilibc', 'c')
-
 cc = meson.get_compiler('c')
 userland_c_flags = ['-nostdlib', '-ffreestanding']
 
@@ -9,6 +7,7 @@ ilibc_sources = files(
   'src/c/unistd.c',
   'src/c/time.c',
   'src/c/signal.c',
+  'src/c/stdlib.c',
 )
 
 nasm = find_program('nasm')
